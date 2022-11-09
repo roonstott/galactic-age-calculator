@@ -1,4 +1,19 @@
-import { Character, Opponent } from "./../src/RPG.js"
+import { Character, Opponent, Game } from "./../src/RPG.js"
+
+describe("Game", () => {
+  test("Should create a game object with player name property", () => {
+    let game1 = new Game("Theodore");
+    expect(game1.playerName).toEqual("Theodore");
+  });
+  test("Should return 'you have vanquished your opponent' and a lower opponent health", () => {
+    let game1 = new Game("Theodore");
+    let goblin = new Opponent("goblin",2,5);
+    let character1 = new Character("bob");
+    let outcome = game1.battle(character1, goblin);
+    expect(outcome).toEqual("you have vanquished your opponent");
+    expect(character1.health).toEqual(96);
+  })
+});
 
 
 describe("Character", () => {

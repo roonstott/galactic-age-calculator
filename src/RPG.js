@@ -1,6 +1,21 @@
-class Game {
+export class Game {
   constructor (playerName) {
     this.playerName = playerName;
+    this.opponent1 = new Opponent("goblin",2,5);
+    this.character; 
+  }
+
+  battle(character, opponent) {
+    while (character.health > 0 && opponent.health > 0) {
+      character.characterAttack(opponent);
+      if (opponent.health <= 0) {
+        return "you have vanquished your opponent"
+      }
+      opponent.opponentAttack(character);
+      if (character.health <= 0) {
+        return "you are dead"
+      }
+    }
   }
 }
 
@@ -37,7 +52,7 @@ export class Character {
 
 }
 
-export class Opponent {
+export class Opponent{
   constructor (name, strength, health) {
     this.name = name;
     this.strength = strength;
