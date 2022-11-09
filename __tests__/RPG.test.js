@@ -27,6 +27,13 @@ describe("Character", () => {
     expect(player2.xp).toEqual(50);
   });
 
+  test("Should harm the opponent, but only if the character has health", () => {
+    let goblin = new Opponent("goblin",2,5);
+    let player1 = new Character("bob");
+    player1.characterAttack(goblin);
+    expect(goblin.health).toEqual(3);
+  })
+
 });
 
 describe("Opponent", () => {

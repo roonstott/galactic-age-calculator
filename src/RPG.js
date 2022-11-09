@@ -1,12 +1,7 @@
-export class Game {
+class Game {
   constructor (playerName) {
     this.playerName = playerName;
   }
-
-  battle(opponent, player1) {
-
-  }
-
 }
 
 
@@ -27,6 +22,19 @@ export class Character {
       this.health = 100;
     }
   }
+
+  characterAttack(opponent) {
+    if(this.health > 0) {
+      if (opponent.health > 0) {
+        opponent.health -= this.strength;
+      } else {
+        // return "You vanquished your opponent";
+      }
+    } else {
+      // return "You are dead";
+    }
+  }
+
 }
 
 export class Opponent {
