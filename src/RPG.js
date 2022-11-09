@@ -1,10 +1,10 @@
 export class Game {
   constructor (playerName) {
-    this.playerName = playerName
+    this.playerName = playerName;
   }
 
-  battle(opponent) {
-    
+  battle(opponent, player1) {
+
   }
 
 }
@@ -35,5 +35,14 @@ export class Opponent {
     this.strength = strength;
     this.health = health;
     this.xpReward = health;
+  }
+  opponentAttack(character) {
+    if(this.health > 0) {
+      if (character.health > 0) {
+        character.health = (character.health - this.strength);
+      } else {
+        //display game over message
+      }
+    }
   }
 }

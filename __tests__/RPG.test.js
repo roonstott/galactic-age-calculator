@@ -37,5 +37,10 @@ describe("Opponent", () => {
     expect(highRob.health).toEqual(5);
     expect(highRob.xpReward).toEqual(5);
   })
-
-})
+  test("Opponent Attack player function", () => {
+    let goblin = new Opponent("goblin",2,5);
+    let player1 = new Character("bob");
+    goblin.opponentAttack(player1);
+    expect(player1.health).toEqual(98);
+  });
+});
