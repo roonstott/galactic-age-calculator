@@ -1,3 +1,17 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(236, 236, 236);
+}
+
+.container {
+  text-align: center;
+  border: 5px solid black;
+  height: 500px;
+}
+
+.playerstats {
+  text-align: top, left;
+}
+
+.opponentstats {
+  text-align: right, bottom;
 }

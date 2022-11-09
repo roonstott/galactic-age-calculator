@@ -9,11 +9,11 @@ export class Game {
     while (character.health > 0 && opponent.health > 0) {
       character.characterAttack(opponent);
       if (opponent.health <= 0) {
-        return "you have vanquished your opponent"
+        return "you have vanquished your opponent";
       }
       opponent.opponentAttack(character);
       if (character.health <= 0) {
-        return "you are dead"
+        return "you are dead";
       }
     }
   }
