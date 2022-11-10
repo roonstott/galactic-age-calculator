@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>RPG</title>
 </head>
+
 <body>
-  <h1>RPG</h1>
+  
+    <div id="create" class="jumbotron">
+      <h1>Create Character:</h1>
+      <label>
+        <input type="text" name="charName" id="charName">
+      </label>
+      <button type="submit">Begin!</button>
+    </div>
+
   <div class="container">
-    
-      <div class="playerstats">
-        player stats
+    <h1>RPG</h1>
+
+    <div class="row" id="row1">
+
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body" id="player-stats">
+            <p class="card-text">player stats</p>
+          </div>
+        </div>
       </div>
-      <div class="opponentstats">
-        opponent stats
+    </div>
+    <div class="row" id="row2">
+      <div class="col-6" id="photo1">
       </div>
-    videogame
+      <div class="col-6" id="photo2">
+      </div>
+    </div>
+    <div class="row" id="row3">
+      <div class="col-8">
+        <button type="click" class="danger">Attack!</button>
+      </div>
+      <div class="col-4">
+        <div class="card" id="opponent-stats">
+          <div class="card-body">
+            <div class="opponentstats">
+              opponent stats
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 </body>
+
 </html>

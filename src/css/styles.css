@@ -5,13 +5,25 @@ body {
 .container {
   text-align: center;
   border: 5px solid black;
-  height: 500px;
+  height: 700px;
+  display: none;
 }
 
-.playerstats {
-  text-align: top, left;
+#player-stats {
+  text-align: left;
 }
 
-.opponentstats {
-  text-align: right, bottom;
+#opponent-stats {
+  text-align: left;
+}
+
+#row2 {
+  height: 480px;
+}
+
+/* #photo1 {
+} */
+
+#create {
+  text-align: center;
 }

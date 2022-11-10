@@ -2,7 +2,7 @@ export class Game {
   constructor (playerName) {
     this.playerName = playerName;
     this.opponent1 = new Opponent("goblin",2,5);
-    this.character; 
+    this.character;
   }
 
   battle(character, opponent) {
@@ -35,6 +35,9 @@ export class Character {
       this.xp = this.xp - 100;
       this.charLevel += 1;
       this.health = 100;
+    }
+    create() {
+      
     }
   }
 
