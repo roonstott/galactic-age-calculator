@@ -6,43 +6,57 @@
 </head>
 
 <body>
-  
-    <div id="create" class="jumbotron">
-      <h1>Create Character:</h1>
-      <label>
-        <input type="text" name="charName" id="charName">
-      </label>
-      <button type="submit">Begin!</button>
+  <div class="container">
+
+    <div id="openPage">
+      <div id="create" class="jumbotron">
+        <h1>Create Character:</h1>
+        <form id="char-builder">
+          <label for="charName">Make your character</label>
+          <input type="text" name="charName" id="charName">
+          <button type="submit">Begin!</button>
+        </form>
+      </div>
     </div>
 
-  <div class="container">
-    <h1>RPG</h1>
-
-    <div class="row" id="row1">
-
-      <div class="col-4">
-        <div class="card">
-          <div class="card-body" id="player-stats">
-            <p class="card-text">player stats</p>
+    <div id="gamePage" class="hidden">
+      <h1>RPG</h1>
+      <div class="row" id="row1">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">player stats: <span id="player-stats"></span></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row" id="row2">
-      <div class="col-6" id="photo1">
+      <div class="row" id="row2">
+
+        <div class="col-6">
+          <img id="photo1" src="../assets/images/battlePlatform.jpeg.png" alt="Battle Platform">
+          <div id="charimg">
+            <img src="../assets/images/newChar(1).png" alt="char image">
+          </div>
+        </div>
+        <div class="col-6" id="photo2">
+          <img src="../assets/images/evilplatform.png" alt="Battle Platform">
+        </div>
       </div>
-      <div class="col-6" id="photo2">
-      </div>
-    </div>
-    <div class="row" id="row3">
-      <div class="col-8">
-        <button type="click" class="danger">Attack!</button>
-      </div>
-      <div class="col-4">
-        <div class="card" id="opponent-stats">
-          <div class="card-body">
-            <div class="opponentstats">
-              opponent stats
+      <div class="row" id="row3">
+        <div class="col-4"> 
+          <div id="fightHidden">  
+            <button type="click" id="fight-btn" class="btn btn-warning">Fight!</button> 
+          </div>            
+        </div>
+        <div class="col-4" id="attack-btn">
+                    
+        </div>
+        <div class="col-4">
+          <div class="card" id="opponent-stats">
+            <div class="card-body">
+              <div class="opponentstats">
+                opponent stats
+              </div>
             </div>
           </div>
         </div>
@@ -50,7 +64,6 @@
     </div>
 
   </div>
-
 </body>
 
 </html>

@@ -22,16 +22,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.77% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>30/31</span>
+                <span class='fraction'>28/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">62.5% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>10/16</span>
+                <span class='fraction'>7/14</span>
             </div>
         
             
@@ -43,9 +43,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.77% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>30/31</span>
+                <span class='fraction'>28/30</span>
             </div>
         
             
@@ -124,23 +124,19 @@
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
 <a name='L68'></a><a href='#L68'>68</a>
-<a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a>
-<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,7 +145,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
@@ -167,9 +163,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -182,46 +178,44 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class Game {
-  constructor (playerName) {
-    this.playerName = playerName;
-    this.opponent1 = new Opponent("goblin",2,5);
-    this.character; 
+  constructor() {
+    this.opponent1 = new Opponent("goblin", 2, 5);
+    this.character;
   }
 &nbsp;
   battle(character, opponent) {
-    while (character.health &gt; 0 &amp;&amp; opponent.health &gt; 0) {
-      character.characterAttack(opponent);
-      if (opponent.health &lt;= 0) {
-        return "you have vanquished your opponent"
-      }
-      opponent.opponentAttack(character);
-      <span class="missing-if-branch" title="if path not taken" >I</span>if (character.health &lt;= 0) {
-<span class="cstat-no" title="statement not covered" >        return "you are dead"</span>
-      }
+    character.characterAttack(opponent);
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (opponent.health &lt;= 0) {
+<span class="cstat-no" title="statement not covered" >      return "you have vanquished your opponent";</span>
+    }
+    opponent.opponentAttack(character);
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (character.health &lt;= 0) {
+<span class="cstat-no" title="statement not covered" >      return "you are dead";</span>
     }
   }
 }
 &nbsp;
 &nbsp;
-export class Character {
-  constructor(name){
+export class Character extends Game {
+  constructor() {
+    super();
     this.charLevel = 1;
-    this.name = name;
+    this.name;
     this.strength = this.charLevel * 2;
     this.defense = this.charLevel * 2;
     this.xp = 0;
@@ -237,7 +231,7 @@ export class Character {
   }
 &nbsp;
   characterAttack(opponent) {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if(this.health &gt; 0) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.health &gt; 0) {
       <span class="missing-if-branch" title="else path not taken" >E</span>if (opponent.health &gt; 0) {
         opponent.health -= this.strength;
       } else {
@@ -250,15 +244,15 @@ export class Character {
 &nbsp;
 }
 &nbsp;
-export class Opponent{
-  constructor (name, strength, health) {
+export class Opponent {
+  constructor(name, strength, health) {
     this.name = name;
     this.strength = strength;
     this.health = health;
     this.xpReward = health;
   }
   opponentAttack(character) {
-    <span class="missing-if-branch" title="else path not taken" >E</span>if(this.health &gt; 0) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.health &gt; 0) {
       <span class="missing-if-branch" title="else path not taken" >E</span>if (character.health &gt; 0) {
         character.health = (character.health - this.strength);
       } else {
@@ -273,7 +267,7 @@ export class Opponent{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Nov 09 2022 14:33:32 GMT-0800 (Pacific Standard Time)
+                at Thu Nov 10 2022 15:58:34 GMT-0800 (Pacific Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>

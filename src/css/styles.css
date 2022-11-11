@@ -2,11 +2,20 @@ body {
   background-color: rgb(236, 236, 236);
 }
 
-.container {
+.hidden {
+  display: none;
+}
+
+.jumbotron {
+  text-align: center;
+  border: 5px solid black;
+  background-color: rgb(206, 167, 113);
+}
+
+#gamePage {
   text-align: center;
   border: 5px solid black;
   height: 700px;
-  display: none;
 }
 
 #player-stats {
@@ -19,11 +28,37 @@ body {
 
 #row2 {
   height: 480px;
+  width: 1120px;
 }
-
-/* #photo1 {
-} */
 
 #create {
   text-align: center;
+}
+
+img {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+#photo1{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+#photo2 img{
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 12%;
+  left: 40%;
+}
+
+#charimg img{
+  width: 20%;
+  height: 35%;
+  position: absolute;
+  top: 20%;
+  left: 38%;
 }
