@@ -23,6 +23,10 @@ describe("Game", () => {
     person1.galacticAge();
     expect(person1.marsAge).toEqual(17);
   });
+  test("Should return a jupiterAge", () => {
+    person1.galacticAge();
+    expect(person1.jupiterAge).toEqual(2);
+  });
 
 });
 
