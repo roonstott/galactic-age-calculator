@@ -3,6 +3,7 @@ export class Person {
     this.earthAge = age;
   }
   galacticAge() {
+    this.mercuryAge = Math.floor(this.earthAge/0.24);
   }
 }
 
