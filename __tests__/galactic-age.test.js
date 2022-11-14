@@ -12,19 +12,15 @@ describe("Game", () => {
     expect(person1.earthAge).toEqual(32);
   });
   test("Should return a mercuryAge for person with given earthAge", () => {
-    person1.galacticAge();
     expect(person1.mercuryAge).toEqual(133);
   });
   test("Should return a venusAge", () => {
-    person1.galacticAge();
     expect(person1.venusAge).toEqual(51)
   });
   test("Should return a marsAge", () => {
-    person1.galacticAge();
     expect(person1.marsAge).toEqual(17);
   });
   test("Should return a jupiterAge", () => {
-    person1.galacticAge();
     expect(person1.jupiterAge).toEqual(2);
   });
 
