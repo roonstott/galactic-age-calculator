@@ -15,6 +15,9 @@ describe("Game", () => {
     person1.galacticAge();
     expect(person1.mercuryAge).toEqual(133);
   });
+  test("Should return a venusAge", () => {
+    expect(person1.venusAge).toEqual(51)
+  });
 
 });
 
