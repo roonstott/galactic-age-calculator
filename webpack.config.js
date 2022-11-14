@@ -17,7 +17,7 @@ module.exports = {
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'RPG',
+      title: 'galactic-age',
       template: './src/index.html',
       inject: 'body'
     })
