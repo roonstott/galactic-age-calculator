@@ -1,7 +1,7 @@
 TN:
 SF:/Users/robertonstott/Desktop/galactic-age-calculator/src/galactic-age.js
 FN:2,(anonymous_0)
-FN:10,(anonymous_1)
+FN:13,(anonymous_1)
 FNF:2
 FNH:1
 FNDA:6,(anonymous_0)
@@ -11,8 +11,11 @@ DA:4,6
 DA:5,6
 DA:6,6
 DA:7,6
-LF:5
-LH:5
+DA:8,6
+DA:9,6
+DA:10,6
+LF:8
+LH:8
 BRF:0
 BRH:0
 end_of_record

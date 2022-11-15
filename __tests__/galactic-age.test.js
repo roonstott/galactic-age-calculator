@@ -5,7 +5,7 @@ describe("Game", () => {
   let person1;
 
   beforeEach (() => {
-    person1 = new Person(32);
+    person1 = new Person(32, "male", false, true);
   });
 
   test("Should create an instance of the person class with earthAge property", () => {
