@@ -42,29 +42,29 @@ describe ("Person", () => {
     expect(person1.baseLifeExpectancy).toEqual(87);
   });
   test("Should return base life expectancy for person male, non-active, non-smoker", () => {
-    let person1= new Person(32, "male", false, false);
+    let person1 = new Person(32, "male", false, false);
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(78);
   });
   test("Should return base life expectancy for person female, non-active, non-smoker", () => {
-    let person1= new Person(32, "female", false, false);
+    let person1 = new Person(32, "female", false, false);
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(83);
   });
   test("Should return base life expectancy for person male, non-active, smoker", () => {
-    let person1= new Person(32, "male", false, true);
+    let person1 = new Person(32, "male", false, true);
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(74);
   }); 
   test("Should return base life expectancy for person female, non-active, smoker", () => {
-    let person1= new Person(32, "female", false, true);
+    let person1 = new Person(32, "female", false, true);
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(79);
   });
-  test("Should return base life expectancy for person male, non-active, non-smoker", () => {
-    let person1= new Person(32, "male", false, false);
+  test("Should return base life expectancy for person male, active, smoker", () => {
+    let person1 = new Person(32, "male", true, true);
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(78);
-  }); 
+  });
 });
 
