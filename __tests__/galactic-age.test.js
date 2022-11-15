@@ -109,6 +109,15 @@ describe ("Person", () => {
     expect(person1.marsYearsOver).toEqual(16);
     expect(person1.jupiterYearsOver).toEqual(3);
   });
-
+  test("Should return remaining life expectancy in each planet's year unit for a person who is exactly at their projected demographic life expectancy. The answer will be zero regardless of unit", () => {
+    let person1 = new Person(83, "female", true, true);
+    person1.lifeExpectancy();
+    person1.galacticLifeExpectancy();  
+    expect(person1.earthYearsLeft).toEqual(0);
+    expect(person1.mercuryYearsLeft).toEqual(0);
+    expect(person1.venusYearsLeft).toEqual(0);
+    expect(person1.marsYearsLeft).toEqual(0);
+    expect(person1.jupiterYearsLeft).toEqual(0);
+  });
 });
 

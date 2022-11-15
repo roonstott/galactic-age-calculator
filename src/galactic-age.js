@@ -46,7 +46,15 @@ export class Person {
       this.venusYearsLeft = Math.round(this.lifeExpDiff/0.62);
       this.marsYearsLeft = Math.round(this.lifeExpDiff/1.88);
       this.jupiterYearsLeft = Math.round(this.lifeExpDiff/11.86);
+    } else if (this.outLived && this.lifeExpDiff>0) {
+      this.earthYearsOver = this.lifeExpDiff;
+      this.mercuryYearsOver = Math.round(this.lifeExpDiff/0.24); 
+      this.venusYearsOver = Math.round(this.lifeExpDiff/0.62); 
+      this.marsYearsOver = Math.round(this.lifeExpDiff/1.88); 
+      this.jupiterYearsOver = Math.round(this.lifeExpDiff/11.86); 
+    } else if (this.lifeExpDiff === 0) {
+      this.earthYearsLeft = 0;
     }
-
   }
 }
+
