@@ -71,5 +71,9 @@ describe ("Person", () => {
     person1.lifeExpectancy(); 
     expect(person1.baseLifeExpectancy).toEqual(83);
   });
+  test("Should return a message stating that a person has lived past their demographically average life expectancy, and tell them by how many years", () => {
+    let person1 = new Person(104, "male", false, true); 
+    expect(person1.lifeExpectancy()).toEqual("You have lived 30 earth years past the average life expectancy of your demographic. How ghoulish.")
+  });
 });
 
