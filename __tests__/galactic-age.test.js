@@ -89,14 +89,14 @@ describe ("Person", () => {
     expect(person1.lifeExpDiff).toEqual(0);
     expect(person1.outLived).toEqual(true); 
   });
-  test("Should return years left of life expectancy for each of the planetary years, for a person who has not outlived their life expectancy", () => {
+  test("Should return years of life expectancy remaining, in terms of each of the planetary years, for a person who has not outlived their earthly life expectancy", () => {
     let person1 = new Person(32, "male", false, true); 
     person1.lifeExpectancy(); 
     expect(person1.earthYearsLeft).toEqual(42);
-    expect(person1.earthYearsLeft).toEqual(42);
-    expect(person1.earthYearsLeft).toEqual(42);
-    expect(person1.earthYearsLeft).toEqual(42);
-
-  })
+    expect(person1.mercuryYearsLeft).toEqual(175);
+    expect(person1.venusYearsLeft).toEqual(68);
+    expect(person1.marsYearsLeft).toEqual(22);
+    expect(person1.jupiterYearsLeft).toEqual(4);
+  });
 });
 
