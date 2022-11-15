@@ -99,5 +99,16 @@ describe ("Person", () => {
     expect(person1.marsYearsLeft).toEqual(22);
     expect(person1.jupiterYearsLeft).toEqual(4);
   });
+  test("should return years lived beyond expectancy, in terms of each planetary year-unit, for someone who has outlived their estimated average expectancy according to demographics", () => {
+    let person1 = new Person(104, "male", false, true); 
+    person1.lifeExpectancy(); 
+    person1.galacticLifeExpectancy(); 
+    expect(person1.earthYearsOver).toEqual(30);
+    expect(person1.mercuryYearsOver).toEqual(125);
+    expect(person1.venusYearsOver).toEqual(48);
+    expect(person1.marsYearsOver).toEqual(16);
+    expect(person1.jupiterYearsOver).toEqual(3);
+  });
+
 });
 
