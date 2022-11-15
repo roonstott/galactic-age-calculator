@@ -83,9 +83,20 @@ describe ("Person", () => {
     expect(person1.outLived).toEqual(false);
     expect(person1.lifeExpDiff).toEqual(42); 
   });
-  test("Should return a message informing the user that our models indicate that they should die this year", () =>{
+  test("Should return a message informing the user that our models indicate that they should die this year", () => {
     let person1 = new Person(83, "female", true, true);
     expect(person1.lifeExpectancy()).toEqual("At a population level, people who align with you along the narrow demographic criteria by which we tabulate our indices would expect, on average, to die this earth year. We hope that this won't cause you to direct resentment either towards us or towards our methods, which are sound...and evidence based. There are always exceptions, except when there aren't, and when it comes to mortality, everyone eventually reverts to the mean, which is dead. Good luck!");
+    expect(person1.lifeExpDiff).toEqual(0);
+    expect(person1.outLived).toEqual(true); 
   });
+  test("Should return years left of life expectancy for each of the planetary years, for a person who has not outlived their life expectancy", () => {
+    let person1 = new Person(32, "male", false, true); 
+    person1.lifeExpectancy(); 
+    expect(person1.earthYearsLeft).toEqual(42);
+    expect(person1.earthYearsLeft).toEqual(42);
+    expect(person1.earthYearsLeft).toEqual(42);
+    expect(person1.earthYearsLeft).toEqual(42);
+
+  })
 });
 
