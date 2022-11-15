@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668473356257" clover="3.2.0">
-  <project timestamp="1668473356258" name="All files">
+<coverage generated="1668473475638" clover="3.2.0">
+  <project timestamp="1668473475638" name="All files">
     <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="23" coveredelements="23" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="galactic-age.js" path="/Users/robertonstott/Desktop/galactic-age-calculator/src/galactic-age.js">
       <metrics statements="15" coveredstatements="15" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <line num="3" count="12" type="stmt"/>
-      <line num="4" count="12" type="stmt"/>
-      <line num="5" count="12" type="stmt"/>
-      <line num="6" count="12" type="stmt"/>
-      <line num="7" count="12" type="stmt"/>
-      <line num="8" count="12" type="stmt"/>
-      <line num="9" count="12" type="stmt"/>
-      <line num="10" count="12" type="stmt"/>
-      <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="3" type="stmt"/>
+      <line num="3" count="13" type="stmt"/>
+      <line num="4" count="13" type="stmt"/>
+      <line num="5" count="13" type="stmt"/>
+      <line num="6" count="13" type="stmt"/>
+      <line num="7" count="13" type="stmt"/>
+      <line num="8" count="13" type="stmt"/>
+      <line num="9" count="13" type="stmt"/>
+      <line num="10" count="13" type="stmt"/>
+      <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="4" type="stmt"/>
       <line num="17" count="3" type="stmt"/>
-      <line num="19" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="20" count="4" type="stmt"/>
-      <line num="22" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="22" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="23" count="2" type="stmt"/>
     </file>
   </project>
