@@ -13,6 +13,8 @@ export class Person {
   lifeExpectancy () {
     if (this.gender === "male") {
       this.baseLifeExpectancy = 82;
+    } else {
+      this.baseLifeExpectancy = 87; 
     }
   }
 
