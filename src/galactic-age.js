@@ -20,8 +20,7 @@ export class Person {
       this.baseLifeExpectancy = Math.round(this.baseLifeExpectancy * 0.95);
     } 
     if (this.smoker === true) {
-      this.baseLifeExpectancy = Math.round(this.baseLifeExpectancy * .95);
+      this.baseLifeExpectancy = Math.round(this.baseLifeExpectancy * 0.95);
     }
   }
 }
-
