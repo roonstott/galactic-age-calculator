@@ -23,6 +23,12 @@ describe("Game", () => {
   test("Should return a jupiterAge", () => {
     expect(person1.jupiterAge).toEqual(2);
   });
+  test("Should return person properties for life expectancy", () => {
+    expect(person1.gender).toEqual("male");
+    expect(person1.active).toEqual(false);
+    expect(person1.smoker).toEqual(true);
+  });
 
 });
+
 
