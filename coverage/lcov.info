@@ -14,8 +14,12 @@ DA:7,7
 DA:8,7
 DA:9,7
 DA:10,7
-LF:8
-LH:8
-BRF:0
-BRH:0
+DA:14,1
+DA:15,1
+LF:10
+LH:10
+BRDA:14,0,0,1
+BRDA:14,0,1,0
+BRF:2
+BRH:1
 end_of_record
