@@ -36,5 +36,10 @@ describe ("Person", () => {
     person1.lifeExpectancy(); 
     expect(person1.baseLifeExpectancy).toEqual(82);
   });
+  test("Should return base life expectancy for person female, active, non-smoker", () => {
+    let person1 = new Person(32, "female", true, false);
+    person1.lifeExpectancy(); 
+    expect(person1.baseLifeExpectancy).toEqual(87);
+  });
 });
 
