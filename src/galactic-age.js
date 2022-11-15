@@ -22,6 +22,13 @@ export class Person {
     if (this.smoker === true) {
       this.baseLifeExpectancy = Math.round(this.baseLifeExpectancy * 0.95);
     }
+    if (this.earthAge>this.baseLifeExpectancy) {
+      this.outLived = true;
+      this.lifeExpDiff = this.earthAge-this.baseLifeExpectancy;
+      return `You have lived ${this.lifeExpDiff} earth years past the average life expectancy of your demographic. How ghoulish.`;
+    }
   }
 }
 
+let person1 = new Person(32, "male", false, true); 
+console.log(person1.lifeExpectancy());
