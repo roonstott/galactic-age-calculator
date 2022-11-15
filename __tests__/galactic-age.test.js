@@ -46,5 +46,6 @@ describe ("Person", () => {
     person1.lifeExpectancy();
     expect(person1.baseLifeExpectancy).toEqual(78);
   });
+  
 });
 
