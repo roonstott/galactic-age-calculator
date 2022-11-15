@@ -27,8 +27,10 @@ export class Person {
       this.lifeExpDiff = this.earthAge-this.baseLifeExpectancy;
       return `You have lived ${this.lifeExpDiff} earth years past the average life expectancy of your demographic. How ghoulish.`;
     }
+    else if (this.earthAge<this.baseLifeExpectancy) {
+      this.outLived = false;
+      this.lifeExpDiff = this.baseLifeExpectancy - this.earthAge;
+      return `At a population level, people who align with you along the narrow demographic criteria by which we tabulate our indices would expect, on average, to live for another ${this.lifeExpDiff} years. We apologize for the ghoulishly deterministic finality we have assigned to you.`;
+    }
   }
 }
-
-let person1 = new Person(32, "male", false, true); 
-console.log(person1.lifeExpectancy());

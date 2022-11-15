@@ -73,11 +73,15 @@ describe ("Person", () => {
   });
   test("Should return a message stating that a person has lived past their demographically average life expectancy, and tell them by how many years", () => {
     let person1 = new Person(104, "male", false, true); 
-    expect(person1.lifeExpectancy()).toEqual("You have lived 30 earth years past the average life expectancy of your demographic. How ghoulish.")
+    expect(person1.lifeExpectancy()).toEqual("You have lived 30 earth years past the average life expectancy of your demographic. How ghoulish."); 
+    expect(person1.outLived).toEqual(true);
+    expect(person1.lifeExpDiff).toEqual(30);
   });
   test("Should return a message stating the number of years that a person has left on their demographically determined earth life expectancy", () => {
     let person1 = new Person(32, "male", false, true);
     expect(person1.lifeExpectancy()).toEqual("At a population level, people who align with you along the narrow demographic criteria by which we tabulate our indices would expect, on average, to live for another 42 years. We apologize for the ghoulishly deterministic finality we have assigned to you.");
+    expect(person1.outLived).toEqual(false);
+    expect(person1.lifeExpDiff).toEqual(42); 
   });
 });
 
