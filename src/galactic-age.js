@@ -54,6 +54,10 @@ export class Person {
       this.jupiterYearsOver = Math.round(this.lifeExpDiff/11.86); 
     } else if (this.lifeExpDiff === 0) {
       this.earthYearsLeft = 0;
+      this.mercuryYearsLeft = 0;
+      this.venusYearsLeft = 0;
+      this.marsYearsLeft = 0; 
+      this.jupiterYearsLeft = 0; 
     }
   }
 }
