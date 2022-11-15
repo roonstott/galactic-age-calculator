@@ -91,7 +91,8 @@ describe ("Person", () => {
   });
   test("Should return years of life expectancy remaining, in terms of each of the planetary years, for a person who has not outlived their earthly life expectancy", () => {
     let person1 = new Person(32, "male", false, true); 
-    person1.lifeExpectancy(); 
+    person1.lifeExpectancy();
+    person1.galacticLifeExpectancy();  
     expect(person1.earthYearsLeft).toEqual(42);
     expect(person1.mercuryYearsLeft).toEqual(175);
     expect(person1.venusYearsLeft).toEqual(68);

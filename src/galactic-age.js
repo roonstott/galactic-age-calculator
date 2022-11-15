@@ -38,4 +38,15 @@ export class Person {
       return "At a population level, people who align with you along the narrow demographic criteria by which we tabulate our indices would expect, on average, to die this earth year. We hope that this won't cause you to direct resentment either towards us or towards our methods, which are sound...and evidence based. There are always exceptions, except when there aren't, and when it comes to mortality, everyone eventually reverts to the mean, which is dead. Good luck!"; 
     }
   }
+
+  galacticLifeExpectancy() {
+    if (!this.outLived) {
+      this.earthYearsLeft = this.lifeExpDiff; 
+      this.mercuryYearsLeft = Math.round(this.lifeExpDiff/0.24);
+      this.venusYearsLeft = Math.round(this.lifeExpDiff/0.62);
+      this.marsYearsLeft = Math.round(this.lifeExpDiff/1.88);
+      this.jupiterYearsLeft = Math.round(this.lifeExpDiff/11.86);
+    }
+
+  }
 }
