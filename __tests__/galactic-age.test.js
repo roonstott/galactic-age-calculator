@@ -1,6 +1,6 @@
 import { Person } from "./../src/galactic-age.js"
 
-describe("Game", () => {
+describe("Person", () => {
   
   let person1;
 
@@ -28,7 +28,13 @@ describe("Game", () => {
     expect(person1.active).toEqual(false);
     expect(person1.smoker).toEqual(true);
   });
-
 });
 
+describe ("Person", () => {
+  test("Should return base life expectency for person male, active, non-smoker", () => {
+    let person1 = new Person(32, "male", true, false);
+    person1.lifeExpectancy(); 
+    expect(person1.baseLifeExpectancy).toEqual(82);
+  });
+});
 
