@@ -28,16 +28,19 @@ _This program will generate a Person object based on the user's inputted age, an
 * _View and edit the code in VS Code_
 * _There is no User Interface Logic in this project, so to use/test the functionality you will have to create a Person object within the galactic-age.js file, call both the lifeExpectancy() and the galacticLifeExpectancy() methods, and then console.log the Person object. The lifeExpectancy() method returns a message, so you can console.log(lifeExpectancy()) to receive some apologetic text explaining the regrettable determinism of life expectancy calculations, generally. You will have to delete the 'export' tag the the front of the class declarations statement, the first word in the file. To test in Jest, you will have to replace that word._
   
-  `let person1 = new Person(33, "female", true, true);
-    console.log(person1.lifeExpectancy());
-    person1.galacticLifeExpectancy();  
-    console.log(person1);`
+  `let person1 = new Person(33, "female", true, true);`
+
+    `console.log(person1.lifeExpectancy());`
+
+    `person1.galacticLifeExpectancy();`
+    
+    `console.log(person1);`
 
     `galactic-age-calculator $ node./src/galactic-age.js`
 
 ## Known Bugs
 
-* _To run code in the file, you must delete the 'export' declaration at the top of the galactic-age.js file. It is needed for Jest testing _
+* To run code in the file, you must delete the 'export' declaration at the top of the galactic-age.js file. It is needed for Jest testing
 
 ## License
 
